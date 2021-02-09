@@ -176,21 +176,21 @@ Finally modify `package.json` script:
 ...
 "scripts": {
   "test": "jest",
-    "clean": "rimraf .nuxt && rimraf dist",
-    "dev": "nuxt --dotenv .env.development",
-    "build:dev": "yarn clean && nuxt build --dotenv .env.development",
-    "start:dev": "nuxt start --dotenv .env.development",
-    "generate:dev": "nuxt generate --dotenv .env.development",
-    "build:staging": "yarn clean && nuxt build --dotenv .env.staging",
-    "start:staging": "pm2 start ecosystem.config.js --only restaurant-staging-app",
-    "reload:staging": "pm2 reload ecosystem.config.js --only restaurant-staging-app",
-    "stop:staging": "pm2 stop ecosystem.config.js --only restaurant-staging-app",
-    "delete:staging": "yarn stop:staging && pm2 delete ecosystem.config.js --only restaurant-staging-app",
-    "build:production": "yarn clean && nuxt build --dotenv .env.production",
-    "start:production": "pm2 start ecosystem.config.js --only restaurant-production-app",
-    "reload:production": "pm2 reload ecosystem.config.js --only restaurant-production-app",
-    "stop:production": "pm2 stop ecosystem.config.js --only restaurant-production-app",
-    "delete:production": "yarn stop:production && pm2 delete ecosystem.config.js --only restaurant-production-app"
+  "clean": "rimraf .nuxt && rimraf dist",
+  "dev": "nuxt --dotenv .env.development",
+  "build:dev": "yarn clean && nuxt build --dotenv .env.development",
+  "start:dev": "nuxt start --dotenv .env.development",
+  "generate:dev": "nuxt generate --dotenv .env.development",
+  "build:staging": "yarn clean && nuxt build --dotenv .env.staging",
+  "start:staging": "pm2 start ecosystem.config.js --only nuxt-staging-app && pm2 logs",
+  "reload:staging": "pm2 reload ecosystem.config.js --only nuxt-staging-app",
+  "stop:staging": "pm2 stop ecosystem.config.js --only nuxt-staging-app",
+  "delete:staging": "yarn stop:staging && pm2 delete ecosystem.config.js --only nuxt-staging-app",
+  "build:production": "yarn clean && nuxt build --dotenv .env.production",
+  "start:production": "pm2 start ecosystem.config.js --only nuxt-production-app && pm2 logs",
+  "reload:production": "pm2 reload ecosystem.config.js --only nuxt-production-app",
+  "stop:production": "pm2 stop ecosystem.config.js --only nuxt-production-app",
+  "delete:production": "yarn stop:production && pm2 delete ecosystem.config.js --only nuxt-production-app"
 },
 ```
 
