@@ -1,0 +1,11 @@
+/* purge css start ignore */
+@tailwind base;
+@tailwind components;
+/* purge css and ignore */
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  @apply box-border m-0;
+}
