@@ -26,11 +26,11 @@ Setup boilerplate application for development, staging and production with some 
 ```bash
 # MASTER CONFIG
 # DEVELOPMENT ENVIRONMENT
-APP_HOST=localhost
+APP_HOST=0.0.0.0
 APP_PORT=3000
 APP_MODE="Development"
 APP_URL=http://localhost:3000
-API_URL=https://api.development-domain.com/v1/
+API_URL=https://api.development-domain.com:8080/v1/
 ```
 
 - Staging Environment `(.env.staging)`
@@ -38,11 +38,11 @@ API_URL=https://api.development-domain.com/v1/
 ```bash
 # MASTER CONFIG
 # STAGING ENVIRONMENT
-APP_HOST=localhost
+APP_HOST=0.0.0.0
 APP_PORT=3000
 APP_MODE="Development"
-APP_URL=http://localhost:3000
-API_URL=https://api.staging-domain.com/v1/
+APP_URL=http://staging-domain.com:8080
+API_URL=https://api.staging-domain.com:8080/v1/
 ```
 
 - Production Environment `(.env.production)`
@@ -50,10 +50,10 @@ API_URL=https://api.staging-domain.com/v1/
 ```bash
 # MASTER CONFIG
 # PRODUCTION ENVIRONMENT
-APP_HOST=localhost
+APP_HOST=0.0.0.0
 APP_PORT=3000
 APP_MODE="Development"
-APP_URL=http://localhost:3000
+APP_URL=http://production-domain.com
 API_URL=https://api.production-domain.com/v1/
 ```
 
