@@ -4,6 +4,7 @@
   "private": true,
   "email" : "asapdotid@gmail.com",
   "url" : "https://github.com/asapdotid/nuxtjs-boilerplate-app.git",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "clean": "rimraf .nuxt && rimraf dist",
